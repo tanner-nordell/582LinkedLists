@@ -29,7 +29,7 @@ def next_block(last_block):
     new_index = last_block.index+1
     content = "this is block"+str(new_index)
     previous_hash = last_block.hash
-    new_block = Block(new_index, str(datetime.datetime.now()), content, previous_hash)
+    new_block = Block(new_index, str(datetime.now()), content, previous_hash)
     return new_block
 # append 5 blocks to the blockchain
 def app_five(block_list):
